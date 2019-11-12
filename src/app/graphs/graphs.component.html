@@ -1,0 +1,14 @@
+<mat-toolbar>
+    <button mat-button (click)="goToBarChart()" routerLink="/bar-chart">Bar Chart</button>
+    <button mat-button [matMenuTriggerFor]="category" routerLink="/category">Category</button>
+    <mat-menu #category="matMenu">
+        <button mat-menu-item (click)="goToNational()">National</button>
+        <button mat-menu-item (click)="goToInterNational()" >Inter-national</button>
+        <button mat-menu-item (click)="goToSports()">Sports</button>
+        <button mat-menu-item (click)="goToBusiness()">Business</button>
+        <button mat-menu-item (click)="goToMovies()">Movies</button>
+        <button mat-menu-item (click)="goToTechnology()">Technology</button>
+        <button mat-menu-item (click)="goToEconomy()">Economy</button>
+      </mat-menu>
+ </mat-toolbar>
+    
